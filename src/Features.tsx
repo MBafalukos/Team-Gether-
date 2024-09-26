@@ -1,26 +1,23 @@
-import { useState } from 'react'
-import { FUCollapse } from './FrostUI'
+
+
 
 
 //images
-import portrait from "./assets/portrait.jpg"
+
+import Engage from "./assets/meeting.png";
+import Manage from "./assets/time-management.png";
+import Reports from "./assets/seo-report.png";
+import DSpace from "./assets/digital.png";
 
 
-//icons
-import { TiLightbulb } from "react-icons/ti";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { LuScanFace } from "react-icons/lu";
+
+
+
 
 
 
 const Features = () => {
-	const [accordion, setAccordion] = useState<number | null>(0)
-
-	const handleAccordion = (index: number) => () => {
-		if (index === accordion) setAccordion(null)
-		else setAccordion(index)
-	}
+	
 
 	return (
 		<>
@@ -40,175 +37,84 @@ const Features = () => {
                         {/* 1st Features */}
 						<div className="xl:pt-16 xl:pb-28 py-16">
                            
-							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
-								<div className="relative">
-									<div className="hidden sm:block">
-										<div className="after:w-20 after:h-20 after:absolute after:-top-8 after:-start-8 2xl:after:end-0 after:bg-[url('./assets/pattern/dot5.svg')] "></div>
-										<div className="before:w-20 before:h-20 before:absolute before:-bottom-8 before:-end-8 before:bg-[url('./assets/pattern/dot2.svg')]"></div>
-									</div>
-									<img
-										src={portrait}
-										alt="saas1"
-										data-aos="fade-right"
-										data-aos-duration="400"
-									/>
-								</div>
+							
+								
+                              
+                                
+                                {/* Side Info */}
 
-								<div className="lg:ms-24  ">
-                                    <p className=' pb-20 text-center text-3xl'>Engagment</p>
-									<div
-										data-fc-type="accordion"
-										data-aos="fade-up"
-										data-aos-duration="500"
-                                        className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'
-									>
-                                        
+								<div className="   ">
+    
+									<div className='grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 '>
+
+                                    <a href="/engagment">
+                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
+                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                                            <img src = {Engage} />
+									</div>        
+									<h1 className="text-xl">
+									Engagment
+									</h1>
+                                    <p className='font-light px-10 text-center'>Engage your employees and build a strong company culture</p>
+                                    </ div>
+                                    </a>
+
+                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
                                     
-                                    <div>
-										<FUCollapse
-											open={accordion == 0}
-											toggleCollapse={handleAccordion(0)}
-										>   
-                                            
-											<FUCollapse.Toggle
-												className=" inline-flex items-center gap-x-4 w-full  text-left text-black transition-all hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-                                                <TiLightbulb  className='text-black h-7 w-7'/>
-												</div>
+                                    
+                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                                            <img src = {Manage} />
+									    </div>
                                                 
-												<h1 className="text-lg">
-													Brain Storming
-												</h1>
-											</FUCollapse.Toggle>
-											
-                                            <FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Before we dive into why companies must invest in
-													employee experience (EX), it’s important to understand
-													what this concept entails.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										
-                                        </FUCollapse>
-                                        
+										<h1 className="text-xl">
+										Managers
+										</h1>
+                                    
 
-										<div className="border-b my-1"></div>
-                                        </div>
+                                    <p className='font-light px-10 text-center'>Manage communication, performance and culture in one platform</p>
+                                    </ div>
 
-                                        <div>
-										<FUCollapse
-											open={accordion == 1}
-											toggleCollapse={handleAccordion(1)}
-										>
-											<FUCollapse.Toggle
-												className=" inline-flex items-center gap-x-4 w-full  text-left text-black transition hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-green-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-                                                <HiOutlineSpeakerphone className = 'text-black w-7 h-7' />
-												</div>
-												<h1 className="text-lg">
-                                                        Announcements
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Post your job, interview candidates and make offers,
-													all on Prompt. Start hiring today.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-
-										<div className="border-b my-1"></div>
-                                        </div>
-
-                                        <div>
-										<FUCollapse
-											open={accordion == 2}
-											toggleCollapse={handleAccordion(2)}
-										>
-											<FUCollapse.Toggle
-												className="pt-2 inline-flex items-center gap-x-4 w-full  text-left text-black transition hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-orange-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-                                                <IoChatboxEllipsesOutline className='text-black w-7 h-7'/>
+                                    <div className='flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
+                                    
+                                    
+                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                                            <img src = {DSpace} />
+									    </div>
                                                 
-												</div>
-												<h1 className="text-lg">
-                                                        Chat
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Finding committed employees is one of public and
-													private organizations’ top priorities.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-                                        <div className="border-b my-1"></div>
-                                        </div>
-                                        <div>
-										<FUCollapse
-											open={accordion == 3}
-											toggleCollapse={handleAccordion(3)}
-										>
-											<FUCollapse.Toggle
-												className="pt-2 inline-flex items-center gap-x-4 w-full  text-left text-black transition hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-orange-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-                                                <LuScanFace className='text-black w-7 h-7' />
-												</div>
-												<h1 className="text-lg">
-                                                Employee Recognition
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Finding committed employees is one of public and
-													private organizations’ top priorities.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-                                        <div className="border-b my-1"></div>
-                                        </div>
-                                        
-                                        
-									</div>
-								</div>
-							</div>
-						</div>
+										<h1 className="text-xl">
+										Digital Space
+										</h1>
+                                    
+
+                                    <p className='font-light px-10 text-center'>Securely manages documents, enhancing collaboration and ensuring compliance.</p>
+                                    </ div>
+
+                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
+                                        <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                                            <img src = {Reports} />
+									    </div>
+                            
+										<h1 className="text-xl">
+										Reporting
+										</h1>
+
+                                        <p className='font-light px-10 text-center'>Generates insights and reports, aiding in data-driven decision-making.</p>
+                                    </ div>
+                                    
+
+
+                                    </div>
+                                   
+                                   
+							
+                            </div>
+						
+					</div>
                         
                         
                         {/* 2nd Feature */}
-                        <div className="xl:pt-16 xl:pb-28 py-16">
+                        
+                        {/* <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								
 
@@ -325,11 +231,11 @@ const Features = () => {
 									/>
 								</div>
 							</div>
-						</div>
+						</div> */}
 
                         {/* 3rd Feature */}
 
-                        <div className="xl:pt-16 xl:pb-28 py-16">
+                        {/* <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								<div className="relative">
 									<div className="hidden sm:block">
@@ -445,7 +351,7 @@ const Features = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 
 						{/* <div>
 							<div className="grid  lg:grid-cols-2 grid-cols-1n gap-6 items-center">
@@ -524,7 +430,7 @@ const Features = () => {
 							</div>
 						</div> */}
 
-<div className="xl:pt-16 xl:pb-28 py-16">
+                          {/*   <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								
 
@@ -642,8 +548,9 @@ const Features = () => {
 									/>
 								</div> 
 							</div>
-						</div>
-					</div>
+						</div> */}
+					
+                    </div>
 				</div>
 
 				{/* <div  className=" hidden xl:py-24 py-16">
