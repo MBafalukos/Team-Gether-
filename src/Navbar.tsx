@@ -9,23 +9,23 @@ import English from "./assets/englishflag.png";
   DropdownMenuTrigger}
  from "./components/ui/dropdown-menu"; */
 
- import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 // import { useRef } from "react";
 import { useState } from "react";
 
 import { Button } from "./components/ui/button";
 
- import {
-   Drawer,
-   DrawerClose,
-   DrawerContent,
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
   DrawerDescription,
-   DrawerFooter,
-   DrawerHeader,
-   DrawerTitle,
-   DrawerTrigger}
- from "@/components/ui/drawer";
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ function Navbar() {
     <div className="sticky top-0 z-[20] font-Inter shadow-md">
       <div className="bg-white items-center sticky top-0 flex justify-between w-full h-24">
         <div className="ml-4 sm:ml-12">
-          <a href="/home">
+          <a href="/Team-Gether-/#/home">
             <img
               className="w-44   sm:h-20 sm:w-auto hover:cursor-pointer"
               src={TeamgetherLogo}
@@ -78,7 +78,7 @@ function Navbar() {
           </NavLink>
 
           <a
-            href="#contact"
+            href="#"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           >
             <li className="block">Contact us</li>
@@ -149,7 +149,7 @@ function Navbar() {
             </button>
           </li>
           <li className="pr-4 w-12 h-12 hidden lg:block ">
-           {/*  <DropdownMenu className="w-12 h-12">
+            {/*  <DropdownMenu className="w-12 h-12">
               <DropdownMenuTrigger asChild>
                 <img
                   className="hover:cursor-pointer sm:h-8 sm:rounded-full"

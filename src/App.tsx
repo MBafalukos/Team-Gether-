@@ -1,6 +1,6 @@
 import Homepage from "./pages/Homepage";
 import Engagement from "./pages/Engagment";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import IndustriesPage from "./pages/IndustriesPage";
 import AboutPage from "./pages/AboutPage";
 import Managers from "./pages/Managers";
@@ -10,19 +10,17 @@ import PricingPage from "./pages/PricingPage";
 import ContactUs from "./ContactUs";
 import { useEffect } from "react";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
@@ -34,9 +32,7 @@ function App() {
           <Route path="/digital-space" element={<Digital />} />
           <Route path="/reporting" element={<Reporting />} />
         </Routes>
-      </BrowserRouter>
-      
-      
+      </HashRouter>
     </>
   );
 }
