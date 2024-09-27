@@ -13,7 +13,7 @@ function Infos() {
       <div className="flex flex-col m-12">
         <div className=" rounded-xl">
           <div className="m-4  text-center  rounded-xl">
-            <div className="text-4xl p-2 font-bold inline-flex">
+            <div className="text-2xl md:text-4xl p-2 font-bold inline-flex">
               <div className="w-12 h-12">
                 <img src={About} />{" "}
               </div>
@@ -30,7 +30,7 @@ function Infos() {
           </div>
           <div className="flex-auto ">
             <div className="m-4 p-2   rounded-xl ">
-              <div className="text-4xl p-4 inline-flex ">
+              <div className="text-2xl md:text-4xl p-4 inline-flex ">
                 <div className="w-8 h-8">
                   <img src={WhatweDo} />
                 </div>
@@ -49,7 +49,7 @@ function Infos() {
               </div>
             </div>
             <div className="m-4 p-2  rounded-xl ">
-              <div className="text-4xl p-4 inline-flex">
+              <div className="text-2xl md:text-4xl p-4 inline-flex">
                 <div className="w-8 h-8">
                   <img src={Vision} />
                 </div>
@@ -65,7 +65,7 @@ function Infos() {
             </div>
 
             <div className="m-4 p-2  rounded-xl ">
-              <div className="text-4xl p-4 inline-flex">
+              <div className="text-2xl md:text-4xl p-4 inline-flex">
                 <div className="w-8 h-8">
                   {" "}
                   <img src={choose} />
@@ -84,7 +84,7 @@ function Infos() {
               </div>
             </div>
             <div className="m-4 p-2  rounded-xl ">
-              <div className="text-4xl p-4 inline-flex">
+              <div className="text-2xl md:text-4xl p-4 inline-flex">
                 <div className="w-8 h-8">
                   <img src={Commitment} />
                 </div>
@@ -101,7 +101,9 @@ function Infos() {
             </div>
           </div>
           <div className="m-4 p-2 text-center rounded-xl ">
-            <div className="text-4xl p-4 -mt-4 underline">Join Us</div>
+            <div className="text-2xl md:text-4xl p-4 -mt-4 underline">
+              Join Us
+            </div>
             <div>
               Join the growing number of organizations that trust Teamgether to
               transform their workplace culture and improve their team’s

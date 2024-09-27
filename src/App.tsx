@@ -7,7 +7,6 @@ import Managers from "./pages/Managers";
 import Digital from "./pages/Digital";
 import Reporting from "./pages/Reporting";
 
-
 function App() {
   return (
     <>
@@ -17,12 +16,12 @@ function App() {
           <Route path="/home" element={<Homepage />} />
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/engagment" element={<Engagement />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/managers" element={<Managers />} />
           <Route path="/digital-space" element={<Digital />} />
           <Route path="/reporting" element={<Reporting />} />
         </Routes>
       </BrowserRouter>
-      
     </>
   );
 }

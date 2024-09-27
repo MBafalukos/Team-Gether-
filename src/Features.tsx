@@ -1,7 +1,3 @@
-
-
-
-
 //images
 
 import Engage from "./assets/meeting.png";
@@ -9,96 +5,84 @@ import Manage from "./assets/time-management.png";
 import Reports from "./assets/seo-report.png";
 import DSpace from "./assets/digital.png";
 
-
-
-
-
-
-
-
 const Features = () => {
-	
-
-	return (
-		<>
-			<section className="overflow-hidden font-Inter">
-				<div className="xl:py-24 py-16">				
-					<div className="text-center">
-							<h1 className="text-3xl/tight  mt-3 mb-4">
-								Better Management. Better Performance
-							</h1>
-							{/* <p className="text-gray-500">
+  return (
+    <>
+      <section className="overflow-hidden font-Inter">
+        <div className="xl:py-24 py-16">
+          <div className="text-center">
+            <h1 className="text-3xl/tight  mt-3 mb-4">
+              Better Management. Better Performance
+            </h1>
+            {/* <p className="text-gray-500">
 								Start working with <span className="text-primary">Prompt</span>{' '}
 								to manage your workforce better
 							</p> */}
-					</div>
+          </div>
 
-                        {/* 1st Features */}
-					<div className="xl:pt-16 xl:pb-28 py-16">
-                           
-									<div className='grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 '>
+          {/* 1st Features */}
+          <div className="xl:pt-16 xl:pb-28 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 ">
+              <a href="/engagment">
+                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                    <img src={Engage} />
+                  </div>
+                  <h1 className="text-xl">Engagment</h1>
+                  <p className="font-light px-10 text-center">
+                    Engage your employees and build a strong company culture
+                  </p>
+                </div>
+              </a>
 
-                                    <a href="/engagment">
-                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                            <img src = {Engage} />
-									</div>        
-									<h1 className="text-xl">
-									Engagment
-									</h1>
-                                    <p className='font-light px-10 text-center'>Engage your employees and build a strong company culture</p>
-                                    </ div>
-                                    </a>
+              <a href="/managers">
+                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                    <img src={Manage} />
+                  </div>
+                  <h1 className="text-xl">Managers</h1>
+                  <p className="font-light px-10 text-center">
+                    Manage communication, performance and culture in one
+                    platform
+                  </p>
+                </div>
+              </a>
 
-									<a href="/managers">
-                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                        <img src = {Manage} />
-									</div>
-                                    <h1 className="text-xl">
-										Managers
-									</h1>            
-                                    <p className='font-light px-10 text-center'>Manage communication, performance and culture in one platform</p>
-                                    </ div>
-									</a>
+              <a href="/digital-space">
+                <div className="flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                    <img src={DSpace} />
+                  </div>
+                  <h1 className="text-xl">Digital Space</h1>
+                  <p className="font-light px-10 text-center">
+                    Securely manages documents, enhancing collaboration and
+                    ensuring compliance.
+                  </p>
+                </div>
+              </a>
 
-									<a className="digital-space">
-                                    <div className='flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                        <img src = {DSpace} />
-									</div>      
-									<h1 className="text-xl">
-										Digital Space
-									</h1>
-                                    <p className='font-light px-10 text-center'>Securely manages documents, enhancing collaboration and ensuring compliance.</p>
-                                    </ div>
-									</a>
+              <a href="/reporting">
+                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                    <img src={Reports} />
+                  </div>
+                  <h1 className="text-xl">Reporting</h1>
+                  <p className="font-light px-10 text-center">
+                    Generates insights and reports, aiding in data-driven
+                    decision-making.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
 
-									<a href ="/reporting">
-                                    <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                            <img src = {Reports} />
-									</div>
-									<h1 className="text-xl">
-										Reporting
-									</h1>
-									<p className='font-light px-10 text-center'>Generates insights and reports, aiding in data-driven decision-making.</p>
-                                    </ div>
-									</a>
-                                    
+          {/* 2nd Feature */}
 
+          {/*  */}
 
-                        </div>
-					</div>
-                        
-                        
-                        {/* 2nd Feature */}
-                        
-                        {/*  */}
+          {/* 3rd Feature */}
 
-                        {/* 3rd Feature */}
-
-                        {/* <div className="xl:pt-16 xl:pb-28 py-16">
+          {/* <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								<div className="relative">
 									<div className="hidden sm:block">
@@ -216,7 +200,7 @@ const Features = () => {
 							</div>
 						</div> */}
 
-						{/* <div>
+          {/* <div>
 							<div className="grid  lg:grid-cols-2 grid-cols-1n gap-6 items-center">
 								<div
 									className="order-2 lg:order-1 2xl:w-9/12"
@@ -293,7 +277,7 @@ const Features = () => {
 							</div>
 						</div> */}
 
-                          {/*   <div className="xl:pt-16 xl:pb-28 py-16">
+          {/*   <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								
 
@@ -412,11 +396,9 @@ const Features = () => {
 								</div> 
 							</div>
 						</div> */}
-					
-                    
-				</div>
+        </div>
 
-				{/* <div  className=" hidden xl:py-24 py-16">
+        {/* <div  className=" hidden xl:py-24 py-16">
 					<div className="container" data-aos="fade-up" data-aos-duration="600">
 						<div className="text-center">
 							<h1 className="text-2xl ">
@@ -508,11 +490,9 @@ const Features = () => {
 						</button>
 					</div>
 				</div> */}
-			
-            
-            </section>
-		</>
-	)
-}
+      </section>
+    </>
+  );
+};
 
-export default Features
+export default Features;
