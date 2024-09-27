@@ -37,7 +37,7 @@ function Navbar() {
     <div className="sticky top-0 z-[20]">
       <div className="bg-white items-center sticky top-0 flex justify-between w-full h-24">
         <div className="ml-4 sm:ml-12">
-          <a href="/teamgetherv2/#/home">
+          <a href="/home">
             <img
               className="w-44   sm:h-20 sm:w-auto hover:cursor-pointer"
               src={TeamgetherLogo}
