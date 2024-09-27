@@ -1,13 +1,13 @@
 import Homepage from "./pages/Homepage";
 import Engagement from "./pages/Engagment";
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import IndustriesPage from "./pages/IndustriesPage";
 import AboutPage from "./pages/AboutPage";
 import Managers from "./pages/Managers";
 import Digital from "./pages/Digital";
 import Reporting from "./pages/Reporting";
 import PricingPage from "./pages/PricingPage";
-import ContactUs from "./ContactUs";
+// import ContactUs from "./ContactUs";
 import { useEffect } from "react";
 
 import AOS from "aos";

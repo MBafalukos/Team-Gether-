@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import MainContent from "../MainContent";
 import Navbar from "../Navbar";
 import ContactUs from "@/ContactUs";
@@ -9,7 +9,7 @@ function Homepage() {
     <div>
       <Navbar />
       <MainContent />
-      <ContactUs/>
+      <ContactUs />
       <Footer />
     </div>
   );
