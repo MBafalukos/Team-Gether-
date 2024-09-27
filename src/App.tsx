@@ -8,8 +8,18 @@ import Digital from "./pages/Digital";
 import Reporting from "./pages/Reporting";
 import PricingPage from "./pages/PricingPage";
 import ContactUs from "./ContactUs";
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <>
       <BrowserRouter>
