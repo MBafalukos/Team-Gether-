@@ -3,6 +3,7 @@ import Engagement from "./pages/Engagment";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import IndustriesPage from "./pages/IndustriesPage";
 import AboutPage from "./pages/AboutPage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/engagment" element={<Engagement />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
         </Routes>
       </BrowserRouter>
     </>
