@@ -1,19 +1,25 @@
 import { Link } from "react-router-dom";
 
-//image
-// import logoDark from "@/assets/images/logo-dark.png";
+
+import logo from "./assets/TeamGether3.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 ">
-      <div className="container hidden">
+    <footer className="bg-gray-100 px-20 ">
+      
         <div className="grid xl:grid-cols-5 gap-6 py-12">
-          <div className="xl:col-span-2">
-            {/* <Link to="index.html">
-              <img src={logoDark} className="h-8" />
-            </Link> */}
-            <p className="text-gray-500/80 mt-5 lg:w-4/5">
-              Make your web application stand out with high-quality landing page
+          <div className="xl:col-span-2 flex flex-col items-center justify-center">
+            <div>
+              <img src = {logo} className="w-52"/>
+            </div>
+            <p className="text-gray-500/80 text-center mt-5 lg:w-4/5">
+            +30-210.6846329 (GR)
+            </p>
+            <p className="text-gray-500/80 text-center mt-5 lg:w-4/5">
+            info@team-gether.com
+            </p>
+            <p className="text-gray-500/80 text-center mt-5 lg:w-4/5">
+            12 Bishop Street, Leicester LE1 6AF United Kingdom
             </p>
           </div>
           <div className="xl:col-span-3 col-span-4">
@@ -154,7 +160,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </footer>
   );
 };

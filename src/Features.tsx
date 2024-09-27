@@ -11,8 +11,8 @@ const Features = () => {
       <section className="overflow-hidden font-Inter">
         <div className="xl:py-24 py-16">
           <div className="text-center">
-            <h1 className="text-3xl/tight  mt-3 mb-4">
-              Better Management. Better Performance
+            <h1 className="text-2xl md:text-5xl/relaxed text-gray-700  mt-3 mb-4">
+             Empower Your Employees
             </h1>
             {/* <p className="text-gray-500">
 								Start working with <span className="text-primary">Prompt</span>{' '}
@@ -21,15 +21,15 @@ const Features = () => {
           </div>
 
           {/* 1st Features */}
-          <div className="xl:pt-16 xl:pb-28 py-16">
+          <div className="xl:pt-16  py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 ">
               <a href="/engagment">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
-                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Engage} />
                   </div>
-                  <h1 className="text-xl">Engagment</h1>
-                  <p className="font-light px-10 text-center">
+                  <h1 className="text-xl md:text-2xl">Engagment</h1>
+                  <p className="font-light px-10 text-slate-500 text-center text-base md:text-lg pt-5">
                     Engage your employees and build a strong company culture
                   </p>
                 </div>
@@ -37,11 +37,11 @@ const Features = () => {
 
               <a href="/managers">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
-                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Manage} />
                   </div>
-                  <h1 className="text-xl">Managers</h1>
-                  <p className="font-light px-10 text-center">
+                  <h1 className="text-2xl">Managers</h1>
+                  <p className="font-light text-slate-500 px-10 text-center text-base md:text-lg pt-5">
                     Manage communication, performance and culture in one
                     platform
                   </p>
@@ -50,11 +50,11 @@ const Features = () => {
 
               <a href="/digital-space">
                 <div className="flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
-                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={DSpace} />
                   </div>
-                  <h1 className="text-xl">Digital Space</h1>
-                  <p className="font-light px-10 text-center">
+                  <h1 className="text-2xl">Digital Space</h1>
+                  <p className="font-light px-10 text-slate-500  text-center text-base md:text-lg pt-5">
                     Securely manages documents, enhancing collaboration and
                     ensuring compliance.
                   </p>
@@ -63,11 +63,11 @@ const Features = () => {
 
               <a href="/reporting">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
-                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                  <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Reports} />
                   </div>
-                  <h1 className="text-xl">Reporting</h1>
-                  <p className="font-light px-10 text-center">
+                  <h1 className="text-2xl">Reporting</h1>
+                  <p className="font-light px-10 text-slate-500  text-center text-base md:text-lg pt-5">
                     Generates insights and reports, aiding in data-driven
                     decision-making.
                   </p>
@@ -207,7 +207,7 @@ const Features = () => {
 									data-aos="fade-up"
 									data-aos-duration="500"
 								>
-									<div className="h-12 w-12 bg-primary/10 flex items-center justify-center rounded-lg">
+									<div className="h-20 w-20 bg-primary/10 flex items-center justify-center rounded-lg">
 										<svg
 											className="h-7 w-7 text-primary"
 											viewBox="0 0 24 24"

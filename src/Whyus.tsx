@@ -8,12 +8,12 @@ type WhyProps = {
 
 const Services = ({ why }: WhyProps) => {
 	return (
-		<section className="py-20">
-			<div className="container">
+		<section className="pb-10 font-Inter">
+			
 				<div className="text-center flex justify-center items-center mb-10">
                     
-                    <img src = {question} className='w-20 h-20' />
-					<h1 className="text-3xl font-medium">Why us</h1>
+                    {/* <img src = {question} className='w-20 h-20' /> */}
+					<h1 className="text-5xl/relaxed text-gray-700">Why us</h1>
                     
 				</div>
 				<div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 pt-12 gap-4">
@@ -38,7 +38,7 @@ const Services = ({ why }: WhyProps) => {
 						)
 					})}
 				</div>
-			</div>
+			
 		</section>
 	)
 }

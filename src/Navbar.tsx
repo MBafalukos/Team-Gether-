@@ -1,30 +1,31 @@
 // import ScrollIntoView from "react-scroll-into-view";
 import TeamgetherLogo from "./assets/TeamGether3.png";
-import Greek from "./assets/greece.svg";
+/* import Greek from "./assets/greece.svg";
 import English from "./assets/englishflag.png";
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
-import { NavLink } from "react-router-dom";
+ import {
+   DropdownMenu,
+  DropdownMenuContent,
+   DropdownMenuItem,
+  DropdownMenuTrigger}
+ from "./components/ui/dropdown-menu"; */
+
+ import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 // import { useRef } from "react";
 import { useState } from "react";
 
-// import { Button } from "./components/ui/button";
+import { Button } from "./components/ui/button";
 
-// import {
-//   Drawer,
-//   DrawerClose,
-//   DrawerContent,
-//   DrawerDescription,
-//   DrawerFooter,
-//   DrawerHeader,
-//   DrawerTitle,
-//   DrawerTrigger,
-// } from "@/components/ui/drawer";
+ import {
+   Drawer,
+   DrawerClose,
+   DrawerContent,
+  DrawerDescription,
+   DrawerFooter,
+   DrawerHeader,
+   DrawerTitle,
+   DrawerTrigger}
+ from "@/components/ui/drawer";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 z-[20]">
+    <div className="sticky top-0 z-[20] font-Inter shadow-md">
       <div className="bg-white items-center sticky top-0 flex justify-between w-full h-24">
         <div className="ml-4 sm:ml-12">
           <a href="/home">
@@ -44,7 +45,7 @@ function Navbar() {
             ></img>
           </a>
         </div>
-        <ul className="inline-flex space-x-4 sm:space-x-12 text-xs sm:text-lg ">
+        <ul className="inline-flex items-center space-x-4 sm:space-x-12 text-xs sm:text-lg ">
           <div className="">
             <NavLink
               to="/features"
@@ -76,19 +77,16 @@ function Navbar() {
             </li>
           </NavLink>
 
-          <NavLink
-            to="/contact-us"
+          <a
+            href="#contact"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           >
             <li className="block">Contact us</li>
-          </NavLink>
+          </a>
           <li className="hidden lg:block items-center">
-            <div className="bg-sky-300 rounded-xl hover:cursor-pointer">
-              Book a demo
-            </div>
-            {/* <Drawer>
+            <Drawer>
               <DrawerTrigger asChild className="align-center">
-                <Button className="border-sky-300 bg-sky-300 hover:bg-white hover:text-sky-300 border-2 hover:border-sky-300  ">
+                <Button className="border-sky-300 hover:bg-sky-300 bg-white hover:text-white rounded-full text-black border-2 hover:border-sky-300 text-base font-semibold  ">
                   Book a Demo
                 </Button>
               </DrawerTrigger>
@@ -143,7 +141,7 @@ function Navbar() {
                   </Button>
                 </form>
               </DrawerContent>
-            </Drawer> */}
+            </Drawer>
           </li>
           <li className="mt-2 lg:hidden mx-4 block">
             <button onClick={toggleMenu}>
@@ -151,7 +149,7 @@ function Navbar() {
             </button>
           </li>
           <li className="pr-4 w-12 h-12 hidden lg:block ">
-            {/* <DropdownMenu className="w-12 h-12">
+           {/*  <DropdownMenu className="w-12 h-12">
               <DropdownMenuTrigger asChild>
                 <img
                   className="hover:cursor-pointer sm:h-8 sm:rounded-full"

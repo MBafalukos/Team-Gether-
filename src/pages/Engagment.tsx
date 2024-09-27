@@ -8,6 +8,7 @@ import { TiLightbulb } from "react-icons/ti";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { LuScanFace } from "react-icons/lu";
+import Navbar from '../Navbar';
 
 function Engagment() {
 
@@ -19,6 +20,8 @@ function Engagment() {
 	}
  
     return (
+		<>
+	<Navbar/>
     <div className='mx-44 my-36'>
                                     
 
@@ -184,6 +187,7 @@ function Engagment() {
                                 </div> 
 
     </div>
+	</>
   )
 }
 

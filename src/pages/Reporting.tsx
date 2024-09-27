@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import portrait from "../assets/portrait.jpg"
 import { FUCollapse } from '../FrostUI'
+import Navbar from '../Navbar'
 
 function Reporting() {
 
@@ -13,7 +14,8 @@ function Reporting() {
 	}
 
   return (
-    
+	<>
+    <Navbar/>
     <div className="xl:pt-16 xl:pb-28 py-16">
 							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
 								
@@ -133,6 +135,7 @@ function Reporting() {
 								</div> 
 							</div>
 						</div>
+						</>
 
 
     

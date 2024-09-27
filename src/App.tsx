@@ -6,6 +6,8 @@ import AboutPage from "./pages/AboutPage";
 import Managers from "./pages/Managers";
 import Digital from "./pages/Digital";
 import Reporting from "./pages/Reporting";
+import PricingPage from "./pages/PricingPage";
+import ContactUs from "./ContactUs";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/engagment" element={<Engagement />} />
           <Route path="/about" element={<AboutPage />} />
@@ -22,6 +25,8 @@ function App() {
           <Route path="/reporting" element={<Reporting />} />
         </Routes>
       </BrowserRouter>
+      
+      
     </>
   );
 }
