@@ -22,9 +22,8 @@ const Features = () => {
 	return (
 		<>
 			<section className="overflow-hidden font-Inter">
-				<div className="xl:py-24 py-16">
-					<div className="container">
-						<div className="text-center">
+				<div className="xl:py-24 py-16">				
+					<div className="text-center">
 							<h1 className="text-3xl/tight  mt-3 mb-4">
 								Better Management. Better Performance
 							</h1>
@@ -32,19 +31,11 @@ const Features = () => {
 								Start working with <span className="text-primary">Prompt</span>{' '}
 								to manage your workforce better
 							</p> */}
-						</div>
+					</div>
 
                         {/* 1st Features */}
-						<div className="xl:pt-16 xl:pb-28 py-16">
+					<div className="xl:pt-16 xl:pb-28 py-16">
                            
-							
-								
-                              
-                                
-                                {/* Side Info */}
-
-								<div className="   ">
-    
 									<div className='grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 '>
 
                                     <a href="/engagment">
@@ -59,179 +50,51 @@ const Features = () => {
                                     </ div>
                                     </a>
 
+									<a href="/managers">
                                     <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    
-                                    
                                     <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                            <img src = {Manage} />
-									    </div>
-                                                
-										<h1 className="text-xl">
+                                        <img src = {Manage} />
+									</div>
+                                    <h1 className="text-xl">
 										Managers
-										</h1>
-                                    
-
+									</h1>            
                                     <p className='font-light px-10 text-center'>Manage communication, performance and culture in one platform</p>
                                     </ div>
+									</a>
 
+									<a className="digital-space">
                                     <div className='flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                    
-                                    
                                     <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
-                                            <img src = {DSpace} />
-									    </div>
-                                                
-										<h1 className="text-xl">
+                                        <img src = {DSpace} />
+									</div>      
+									<h1 className="text-xl">
 										Digital Space
-										</h1>
-                                    
-
+									</h1>
                                     <p className='font-light px-10 text-center'>Securely manages documents, enhancing collaboration and ensuring compliance.</p>
                                     </ div>
+									</a>
 
+									<a href ="/reporting">
                                     <div className='flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5'>
-                                        <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
+                                    <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12 mb-5">
                                             <img src = {Reports} />
-									    </div>
-                            
-										<h1 className="text-xl">
+									</div>
+									<h1 className="text-xl">
 										Reporting
-										</h1>
-
-                                        <p className='font-light px-10 text-center'>Generates insights and reports, aiding in data-driven decision-making.</p>
+									</h1>
+									<p className='font-light px-10 text-center'>Generates insights and reports, aiding in data-driven decision-making.</p>
                                     </ div>
+									</a>
                                     
 
 
-                                    </div>
-                                   
-                                   
-							
-                            </div>
-						
+                        </div>
 					</div>
                         
                         
                         {/* 2nd Feature */}
                         
-                        {/* <div className="xl:pt-16 xl:pb-28 py-16">
-							<div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
-								
-
-								<div className="lg:ms-24">
-									<div
-										data-fc-type="accordion"
-										data-aos="fade-up"
-										data-aos-duration="500"
-									>
-										<FUCollapse
-											open={accordion == 4}
-											toggleCollapse={handleAccordion(4)}
-										>
-											<FUCollapse.Toggle
-												className="pt-2 inline-flex items-center gap-x-4 w-full  text-left text-black transition-all hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-													{' '}
-												</div>
-                                                
-												<h1 className=" mb-4 mt-2">
-													Improve Employee Experience
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Before we dive into why companies must invest in
-													employee experience (EX), it’s important to understand
-													what this concept entails.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-
-										<div className="border-b my-6"></div>
-
-										<FUCollapse
-											open={accordion == 1}
-											toggleCollapse={handleAccordion(1)}
-										>
-											<FUCollapse.Toggle
-												className="pt-2 inline-flex items-center gap-x-4 w-full  text-left text-black transition hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-green-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-													{' '}
-												</div>
-												<h1 className=" mb-4 mt-2">
-													Hiring & Onboarding
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Post your job, interview candidates and make offers,
-													all on Prompt. Start hiring today.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-
-										<div className="border-b my-6"></div>
-
-										<FUCollapse
-											open={accordion == 2}
-											toggleCollapse={handleAccordion(2)}
-										>
-											<FUCollapse.Toggle
-												className="pt-2 inline-flex items-center gap-x-4 w-full  text-left text-black transition hover:text-gray-500  dark:hover:text-gray-400"
-												data-fc-type="collapse"
-											>
-												<div className="bg-orange-500/10 rounded-lg flex items-center justify-center h-12 w-12">
-													    {' '}
-												</div>
-												<h1 className=" mb-4 mt-2">
-													People Data & Analytics
-												</h1>
-											</FUCollapse.Toggle>
-											<FUCollapse.Menu className="w-full overflow-hidden duration-300 ps-16">
-												<p className="text-gray-700 dark:text-gray-300">
-													Finding committed employees is one of public and
-													private organizations’ top priorities.
-												</p>
-												<div className="mt-7 flex items-center">
-													<div className="text-primary">
-														Learn more{' '}
-														<i className="fa-solid fa-arrow-right ms-2"></i>
-													</div>
-												</div>
-											</FUCollapse.Menu>
-										</FUCollapse>
-									</div>
-								</div>
-                                <div className="relative">
-									<div className="hidden sm:block">
-										<div className="after:w-20 after:h-20 after:absolute after:-top-8 after:-start-8 2xl:after:end-0 after:bg-[url('@/assets/images/pattern/dot5.svg')]"></div>
-										<div className="before:w-20 before:h-20 before:absolute before:-bottom-8 before:-end-8 before:bg-[url('@/assets/images/pattern/dot2.svg')]"></div>
-									</div>
-									<img
-										src={portrait}
-										alt="saas1"
-										data-aos="fade-right"
-										data-aos-duration="400"
-									/>
-								</div>
-							</div>
-						</div> */}
+                        {/*  */}
 
                         {/* 3rd Feature */}
 
@@ -550,7 +413,7 @@ const Features = () => {
 							</div>
 						</div> */}
 					
-                    </div>
+                    
 				</div>
 
 				{/* <div  className=" hidden xl:py-24 py-16">
