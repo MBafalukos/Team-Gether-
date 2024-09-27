@@ -1,13 +1,14 @@
-import React from 'react'
-import MainContent from "../MainContent"
-
+import React from "react";
+import MainContent from "../MainContent";
+import Navbar from "../Navbar";
 
 function Homepage() {
   return (
     <div>
-    <MainContent />  
+      <Navbar />
+      <MainContent />
     </div>
   );
 }
 
-export default Homepage
+export default Homepage;
