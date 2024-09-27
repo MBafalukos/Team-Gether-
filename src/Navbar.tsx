@@ -66,10 +66,16 @@ function Navbar() {
             <li className="block">About</li>
           </NavLink>
 
-          <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
-            {/* <ScrollIntoView selector="#prices">Pricing</ScrollIntoView> */}
-            Pricing
-          </li>
+          <NavLink
+            to="/pricing"
+            className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
+          >
+            <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
+              {/* <ScrollIntoView selector="#prices">Pricing</ScrollIntoView> */}
+              Pricing
+            </li>
+          </NavLink>
+
           <NavLink
             to="/contact-us"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
