@@ -12,7 +12,7 @@ const Features = () => {
         <div className="xl:py-24 py-16">
           <div className="text-center">
             <h1 className="text-2xl md:text-5xl/relaxed text-gray-700  mt-3 mb-4">
-             Empower Your Employees
+              Empower Your Employees
             </h1>
             {/* <p className="text-gray-500">
 								Start working with <span className="text-primary">Prompt</span>{' '}
@@ -23,7 +23,7 @@ const Features = () => {
           {/* 1st Features */}
           <div className="xl:pt-16  py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 ">
-              <a href="/engagment">
+              <a href="/Team-Gether-/#/engagment">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Engage} />
@@ -35,7 +35,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/managers">
+              <a href="/Team-Gether-/#/managers">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Manage} />
@@ -48,7 +48,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/digital-space">
+              <a href="/Team-Gether-/#/digital-space">
                 <div className="flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={DSpace} />
@@ -61,7 +61,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/reporting">
+              <a href="/Team-Gether-/#/reporting">
                 <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Reports} />
