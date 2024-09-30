@@ -77,12 +77,17 @@ function Navbar() {
             </li>
           </NavLink>
 
-          <a
-            href="#"
+          {/* <a
+            href="/contact"
+            className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
+          > */}
+          <NavLink
+            to="/home/contact"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           >
             <li className="block">Contact us</li>
-          </a>
+            {/* </a> */}
+          </NavLink>
           <li className="hidden lg:block items-center">
             <Drawer>
               <DrawerTrigger asChild className="align-center">

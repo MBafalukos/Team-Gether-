@@ -72,12 +72,6 @@ function Engagment() {
                       Enables comprehensive performance appraisals, fostering
                       employee development..
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -106,12 +100,6 @@ function Engagment() {
                       Securely manages documents, enhancing collaboration and
                       ensuring compliance.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -140,12 +128,6 @@ function Engagment() {
                       Creates digital cards, facilitating networking and
                       simplifying communication.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>

@@ -25,7 +25,7 @@ function Engagment() {
       <Navbar />
       <div className=" font-Inter bg-gradient-to-b from-blue-300/20">
         <h1 className="text-center text-4xl font-bold py-10 tracking-wider">
-          Reportin
+          Reporting
         </h1>
 
         <div
@@ -69,12 +69,6 @@ function Engagment() {
                       Generates insights and reports, aiding in data-driven
                       decision-making.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -103,12 +97,6 @@ function Engagment() {
                       Exports comprehensive data in Excel for in-depth analysis
                       and presentation.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 

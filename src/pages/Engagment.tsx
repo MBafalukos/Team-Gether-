@@ -39,7 +39,7 @@ function Engagment() {
       <Navbar />
       <div className=" font-Inter bg-gradient-to-b from-blue-300/20">
         <h1 className="text-center text-4xl font-bold py-10 tracking-wider">
-          Engagment
+          Engagement
         </h1>
 
         <div
@@ -56,7 +56,14 @@ function Engagment() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
-            <img src={party} className="w-[500px] xl:ml-44" />
+            <div className="w-[500px] xl:ml-44">
+              {accordion === 0 && <img src={party} />}
+              {accordion === 1 && <img src={party} />}
+              {accordion === 2 && <img src={party1} />}
+              {accordion === 3 && <img src={party} />}
+              {accordion === 4 && <img src={party1} />}
+              {accordion === 5 && <img src={party} />}
+            </div>
 
             <div className="xl:mr-36">
               <div>
@@ -84,12 +91,6 @@ function Engagment() {
                       experience (EX), it’s important to understand what this
                       concept entails.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -118,12 +119,6 @@ function Engagment() {
                       Post your job, interview candidates and make offers, all
                       on Prompt. Start hiring today.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -152,12 +147,6 @@ function Engagment() {
                       Finding committed employees is one of public and private
                       organizations’ top priorities.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -187,12 +176,6 @@ function Engagment() {
                       Offers a confidential channel for feedback, promoting
                       openness and action.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -220,12 +203,6 @@ function Engagment() {
                       Fosters community by sharing experiences and insights
                       across the organization.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -255,12 +232,6 @@ function Engagment() {
                       Visualizes hierarchy and roles, improving clarity and
                       decision-making.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -294,12 +265,6 @@ function Engagment() {
                       Collects employee feedback for data-driven decision-making
                       and sentiment analysis.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -327,12 +292,6 @@ function Engagment() {
                       Showcases multimedia content, boosting morale and
                       celebrating achievements.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -362,12 +321,6 @@ function Engagment() {
                       Communicates core values and goals, enhancing purpose and
                       alignment.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -394,12 +347,6 @@ function Engagment() {
                       Finding committed employees is one of public and private
                       organizations’ top priorities.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -429,12 +376,6 @@ function Engagment() {
                       Recognizes achievements with virtual awards, promoting
                       appreciation and motivation.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -462,12 +403,6 @@ function Engagment() {
                       Provides an event calendar to keep employees informed and
                       engaged.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 

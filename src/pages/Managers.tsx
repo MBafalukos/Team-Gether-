@@ -74,12 +74,6 @@ function Engagment() {
                       Enables comprehensive performance appraisals, fostering
                       employee development.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -108,12 +102,6 @@ function Engagment() {
                       Fosters community by sharing experiences and insights
                       across the organization.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
 
@@ -142,12 +130,6 @@ function Engagment() {
                       Manages talent groups, identifying leaders and aligning
                       growth with goals.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -177,12 +159,6 @@ function Engagment() {
                       Keeps detailed notes, offering a clear, fact-based view of
                       each employee.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
@@ -210,12 +186,6 @@ function Engagment() {
                       Empowers employee ambassadors to promote the organization
                       and boost engagement.
                     </p>
-                    <div className="mt-7 flex items-center">
-                      <div className="text-primary">
-                        Learn more{" "}
-                        <i className="fa-solid fa-arrow-right ms-2"></i>
-                      </div>
-                    </div>
                   </FUCollapse.Menu>
                 </FUCollapse>
                 <div className="border-b my-1 w-full"></div>
