@@ -2,10 +2,10 @@ import { FUCollapse } from "../FrostUI";
 import { useState } from "react";
 
 //icons
-import { TiLightbulb } from "react-icons/ti";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { LuScanFace } from "react-icons/lu";
+// import { TiLightbulb } from "react-icons/ti";
+// import { HiOutlineSpeakerphone } from "react-icons/hi";
+// import { IoChatboxEllipsesOutline } from "react-icons/io5";
+// import { LuScanFace } from "react-icons/lu";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -24,7 +24,7 @@ import EventsImg from "../assets/events.png";
 import ErecognitionImg from "../assets/employeerecognition.png";
 import VoiceImg from "../assets/yourvoice.png";
 import ChartImg from "../assets/organizationalchart.png";
-import { Brain } from "lucide-react";
+// import { Brain } from "lucide-react";
 
 function Engagment() {
   const [accordion, setAccordion] = useState<number | null>(0);

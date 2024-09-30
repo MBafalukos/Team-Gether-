@@ -1,5 +1,5 @@
-import { PricingCards2 } from "@/components";
-import { plans } from "./data";
+// import { PricingCards2 } from "@/components";
+// import { plans } from "./data";
 
 const PricingPlans = () => {
   return (
@@ -154,7 +154,7 @@ const PricingPlans = () => {
             </div>
           </div>
         </div> */}
-        <PricingCards2 plans={plans} />
+        {/* <PricingCards2 plans={plans} /> */}
       </div>
     </section>
   );

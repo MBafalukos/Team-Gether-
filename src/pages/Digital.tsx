@@ -2,10 +2,10 @@ import { FUCollapse } from "../FrostUI";
 import { useState } from "react";
 
 //icons
-import { TiLightbulb } from "react-icons/ti";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { LuScanFace } from "react-icons/lu";
+// import { TiLightbulb } from "react-icons/ti";
+// import { HiOutlineSpeakerphone } from "react-icons/hi";
+// import { IoChatboxEllipsesOutline } from "react-icons/io5";
+// import { LuScanFace } from "react-icons/lu";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";

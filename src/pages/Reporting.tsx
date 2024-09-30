@@ -2,8 +2,8 @@ import { FUCollapse } from "../FrostUI";
 import { useState } from "react";
 
 //icons
-import { TiLightbulb } from "react-icons/ti";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
+// import { TiLightbulb } from "react-icons/ti";
+// import { HiOutlineSpeakerphone } from "react-icons/hi";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
