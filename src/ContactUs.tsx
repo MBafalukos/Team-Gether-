@@ -152,7 +152,7 @@ const ContactUs = () => {
 										className="inline-flex w-1/3 justify-center items-center text-md bg-sky-300 text-white font-medium leading-6 text-center align-middle select-none py-2 px-4 rounded-md transition-all hover:shadow-lg hover:shadow-primary/80"
 									>
 										<span className='hidden md:block'>Get in touch</span>
-                                        <span className='block md:hidden'>Send</span>
+                                        <span className='block md:hidden'>Send </span>
 										<span className="w-4 h-4 ms-1">
 											<svg
 												className="w-full h-full text-white"

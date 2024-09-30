@@ -1,7 +1,7 @@
 import Features from "./Features";
 import Whyus from "./Whyus";
 import { services, why, plans } from "./data";
-import { Button } from "./components/ui/button";
+
 
 //image
 import portrait from "./assets/portrait.jpg";
@@ -55,10 +55,11 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="px-20">
+      
         <Features />
+        
         <Whyus why={why} />
-      </div>
+      
     </>
   );
 };

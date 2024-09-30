@@ -8,7 +8,7 @@ type WhyProps = {
 
 const Services = ({ why }: WhyProps) => {
 	return (
-		<section className="pb-10 font-Inter">
+		<section className="pb-10 font-Inter px-20 bg-gradient-to-b from-zinc-400/20 to-sky-100/20">
 			
 				<div className="text-center flex justify-center items-center mb-10">
                     

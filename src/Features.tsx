@@ -4,15 +4,16 @@ import Engage from "./assets/meeting.png";
 import Manage from "./assets/time-management.png";
 import Reports from "./assets/seo-report.png";
 import DSpace from "./assets/digital.png";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Features = () => {
   return (
     <>
-      <section className="overflow-hidden font-Inter">
-        <div className="xl:py-24 py-16">
+      <section className="overflow-hidden font-Inter bg-zinc-400/20 ">
+        <div className="xl:py-24 py-16 ">
           <div className="text-center">
-            <h1 className="text-2xl md:text-5xl/relaxed text-gray-700  mt-3 mb-4">
-             Empower Your Employees
+            <h1 className="text-2xl md:text-5xl/relaxed text-gray-700 font-semibold mt-3 mb-4">
+              Empower Your Employees
             </h1>
             {/* <p className="text-gray-500">
 								Start working with <span className="text-primary">Prompt</span>{' '}
@@ -22,9 +23,9 @@ const Features = () => {
 
           {/* 1st Features */}
           <div className="xl:pt-16  py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 px-28 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 md:mx-64 mx-10 ">
               <a href="/engagment">
-                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                <div className="flex relative flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Engage} />
                   </div>
@@ -32,11 +33,14 @@ const Features = () => {
                   <p className="font-light px-10 text-slate-500 text-center text-base md:text-lg pt-5">
                     Engage your employees and build a strong company culture
                   </p>
+                  <span className="flex  items-center absolute bottom-0 right-0 border border-zinc-300 rounded">
+                    <IoIosArrowForward className="w-6 h-6" />
+                  </span>
                 </div>
               </a>
 
               <a href="/managers">
-                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                <div className="flex relative h-full flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md  hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Manage} />
                   </div>
@@ -45,24 +49,30 @@ const Features = () => {
                     Manage communication, performance and culture in one
                     platform
                   </p>
+                  <span className="flex  items-center absolute bottom-0 right-0 border border-zinc-300 rounded">
+                    <IoIosArrowForward className="w-6 h-6" />
+                  </span>
                 </div>
               </a>
 
               <a href="/digital-space">
-                <div className="flex flex-col items-center justify-center  rounded   hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                <div className="flex relative flex-col items-center bg-zinc-100 justify-center  rounded   hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={DSpace} />
                   </div>
                   <h1 className="text-2xl">Digital Space</h1>
                   <p className="font-light px-10 text-slate-500  text-center text-base md:text-lg pt-5">
                     Securely manages documents, enhancing collaboration and
-                    ensuring compliance.
+                    compliance.
                   </p>
+                  <span className="flex  items-center absolute bottom-0 right-0 border border-zinc-300 rounded">
+                    <IoIosArrowForward className="w-6 h-6" />
+                  </span>
                 </div>
               </a>
 
               <a href="/reporting">
-                <div className="flex flex-col items-center justify-center rounded hover:cursor-pointer transition-all hover:scale-105 hover:border  hover:border-gray-500 py-5">
+                <div className="flex relative flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Reports} />
                   </div>
@@ -71,6 +81,9 @@ const Features = () => {
                     Generates insights and reports, aiding in data-driven
                     decision-making.
                   </p>
+                  <span className="flex  items-center absolute bottom-0 right-0 border border-zinc-300 rounded">
+                    <IoIosArrowForward className="w-6 h-6" />
+                  </span>
                 </div>
               </a>
             </div>
