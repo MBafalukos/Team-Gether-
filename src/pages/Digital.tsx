@@ -11,6 +11,10 @@ import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/Corporate Party.png";
 
+import KnowledgeImg from "../assets/knowledgebase.png";
+import StorageImg from "../assets/documentstorage.png";
+import CardImg from "../assets/businessdigitalcard.png";
+
 function Engagment() {
   const [accordion, setAccordion] = useState<number | null>(0);
 
@@ -54,7 +58,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={KnowledgeImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -90,7 +94,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <HiOutlineSpeakerphone className="text-black w-7 h-7" />
+                      <img src={StorageImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Document Storage
@@ -124,7 +128,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <IoChatboxEllipsesOutline className="text-black w-7 h-7" />
+                      <img src={CardImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Business Digital Card

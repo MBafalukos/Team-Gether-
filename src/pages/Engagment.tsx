@@ -12,6 +12,20 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/Corporate Party.png";
 import party1 from "../assets/Corporate Intern.png";
 
+import BrainstormImg from "../assets/brainstorming.png";
+import StoriesImg from "../assets/stories.png";
+import AnnouncementsImg from "../assets/announcements.png";
+import ChatImg from "../assets/chat.png";
+import SurveysImg from "../assets/surveysandpolls.png";
+import MediaImg from "../assets/mediawall.png";
+import GoalsImg from "../assets/valuesandgoals.png";
+import BadgesImg from "../assets/badgesandawards.png";
+import EventsImg from "../assets/events.png";
+import ErecognitionImg from "../assets/employeerecognition.png";
+import VoiceImg from "../assets/yourvoice.png";
+import ChartImg from "../assets/organizationalchart.png";
+import { Brain } from "lucide-react";
+
 function Engagment() {
   const [accordion, setAccordion] = useState<number | null>(0);
 
@@ -55,7 +69,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={BrainstormImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -92,7 +106,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <HiOutlineSpeakerphone className="text-black w-7 h-7" />
+                      <img src={AnnouncementsImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Announcements
@@ -126,7 +140,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <IoChatboxEllipsesOutline className="text-black w-7 h-7" />
+                      <img src={ChatImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Chat
@@ -159,7 +173,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={VoiceImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -194,7 +208,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <LuScanFace className="text-black w-7 h-7" />
+                      <img src={StoriesImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Stories
@@ -227,7 +241,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={ChartImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -266,7 +280,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={SurveysImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -301,7 +315,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <LuScanFace className="text-black w-7 h-7" />
+                      <img src={MediaImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Media Wall
@@ -334,7 +348,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={GoalsImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -368,7 +382,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <LuScanFace className="text-black w-7 h-7" />
+                      <img src={ErecognitionImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Employee Recognition
@@ -401,7 +415,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={BadgesImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -436,7 +450,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <LuScanFace className="text-black w-7 h-7" />
+                      <img src={EventsImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       Events

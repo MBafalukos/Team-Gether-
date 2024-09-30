@@ -9,6 +9,9 @@ import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/Corporate Party.png";
 
+import AnalyticsImg from "../assets/analyticsandreports.png";
+import XlImg from "../assets/xlextractofreports.png";
+
 function Engagment() {
   const [accordion, setAccordion] = useState<number | null>(0);
 
@@ -52,7 +55,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <TiLightbulb className="text-black h-7 w-7" />
+                      <img src={AnalyticsImg} />
                     </div>
 
                     <h1 className=" flex items-center w-full  justify-between text-lg">
@@ -88,7 +91,7 @@ function Engagment() {
                     data-fc-type="collapse"
                   >
                     <div className="border rounded-lg flex items-center justify-center h-12 w-12">
-                      <HiOutlineSpeakerphone className="text-black w-7 h-7" />
+                      <img src={XlImg} />
                     </div>
                     <h1 className=" flex items-center w-full  justify-between text-lg">
                       XL Extract of Reports

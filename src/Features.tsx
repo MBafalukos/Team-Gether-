@@ -24,7 +24,7 @@ const Features = () => {
           {/* 1st Features */}
           <div className="xl:pt-16  py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-20 md:mx-64 mx-10 ">
-              <a href="/engagment">
+              <a href="/Team-Gether-/#/engagment">
                 <div className="flex relative flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Engage} />
@@ -39,7 +39,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/managers">
+              <a href="/Team-Gether-/#/managers">
                 <div className="flex relative h-full flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md  hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Manage} />
@@ -55,7 +55,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/digital-space">
+              <a href="/Team-Gether-/#/digital-space">
                 <div className="flex relative flex-col items-center bg-zinc-100 justify-center  rounded   hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={DSpace} />
@@ -71,7 +71,7 @@ const Features = () => {
                 </div>
               </a>
 
-              <a href="/reporting">
+              <a href="/Team-Gether-/#/reporting">
                 <div className="flex relative flex-col items-center bg-zinc-100 justify-center rounded hover:cursor-pointer shadow-md hover:border  hover:border-gray-500 py-5">
                   <div className="bg-blue-500/10 rounded-lg flex items-center justify-center h-20 w-20 mb-5">
                     <img src={Reports} />
