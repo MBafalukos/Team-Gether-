@@ -1,7 +1,7 @@
 import Features from "./Features";
 import Whyus from "./Whyus";
-import { why } from "./data";
-// import { Button } from "./components/ui/button";
+import { services, why, plans } from "./data";
+
 
 //image
 import portrait from "./assets/portrait.jpg";
@@ -24,21 +24,12 @@ const Hero = () => {
                 data-aos-duration={1000}
               >
                 <h1 className="md:text-5xl text-3xl font-medium my-3">
-                  The{" "}
-                  <span className="bg-gradient-to-b from-sky-600 to-sky-900 bg-clip-text text-transparent">
-                    heartbeat
-                  </span>{" "}
-                  of your company's collaboration and interaction
+                  The <span className="bg-gradient-to-b from-sky-600 to-sky-900 bg-clip-text text-transparent">heartbeat</span> of your
+                  company's collaboration and interaction
                 </h1>
                 <p className="text-base mt-6 mb-20 text-slate-700">
-                  An{" "}
-                  <span className="bg-gradient-to-b from-sky-700 font-bold to-black bg-clip-text text-transparent">
-                    Employee Experience
-                  </span>{" "}
-                  and{" "}
-                  <span className="bg-gradient-to-b font-bold from-sky-600 to-black bg-clip-text text-transparent ">
-                    Engagement Platform
-                  </span>{" "}
+                  An <span className="bg-gradient-to-b from-sky-700 font-bold to-black bg-clip-text text-transparent">Employee Experience</span>{" "}
+                  and <span className="bg-gradient-to-b font-bold from-sky-600 to-black bg-clip-text text-transparent ">Engagement Platform</span>{" "}
                   designed to{" "}
                   <span className="">enhance internal communication</span> and{" "}
                   <span className="">
@@ -47,7 +38,9 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-wrap items-center justify-center  md:justify-start gap-5">
                   <div className="py-3 px-6 rounded border border-sky-300 font-semibold text-white bg-sky-300 hover:shadow-lg hover:shadow-sky-500/50 hover:cursor-pointer hover:scale-105 focus:outline focus:outline-red-500/50 transition-all duration-500">
+                    
                     Learn More
+                    
                   </div>
                 </div>
               </div>
@@ -62,10 +55,11 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="px-20">
+      
         <Features />
+        
         <Whyus why={why} />
-      </div>
+      
     </>
   );
 };
