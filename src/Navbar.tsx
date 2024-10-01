@@ -1,4 +1,4 @@
-// import ScrollIntoView from "react-scroll-into-view";
+import ScrollIntoView from "react-scroll-into-view";
 import TeamgetherLogo from "./assets/TeamGether3.png";
 /* import Greek from "./assets/greece.svg";
 import English from "./assets/englishflag.png";
@@ -38,7 +38,7 @@ function Navbar() {
     <div className="sticky top-0 z-[20] font-Inter shadow-md">
       <div className="bg-white items-center sticky top-0 flex justify-between w-full h-24">
         <div className="ml-4 sm:ml-12">
-          <a href="/Team-Gether-/#/home">
+          <a href="/Team-Gether-/">
             <img
               className="w-44   sm:h-20 sm:w-auto hover:cursor-pointer"
               src={TeamgetherLogo}
@@ -67,27 +67,29 @@ function Navbar() {
             <li className="block">About</li>
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             to="/pricing"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
-          >
+          > */}
+          <ScrollIntoView selector="#pricing">
             <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
-              {/* <ScrollIntoView selector="#prices">Pricing</ScrollIntoView> */}
               Pricing
             </li>
-          </NavLink>
+          </ScrollIntoView>
+          {/* </NavLink> */}
 
           {/* <a
             href="/contact"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           > */}
-          <NavLink
-            to="/home/contact"
-            className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
-          >
-            <li className="block">Contact us</li>
-            {/* </a> */}
-          </NavLink>
+          {/* <NavLink className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "> */}
+          <ScrollIntoView selector="#contact">
+            <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
+              Contact us
+            </li>
+          </ScrollIntoView>
+          {/* </a> */}
+          {/* </NavLink> */}
           <li className="hidden lg:block items-center">
             <Drawer>
               <DrawerTrigger asChild className="align-center">
@@ -175,13 +177,6 @@ function Navbar() {
         <div className="bg-white w-full text-center lg:hidden">
           <ul className="space-y-4 text-lg">
             <NavLink
-              to="/features"
-              className="block font-semibold hover:cursor-pointer hover:underline"
-              onClick={toggleMenu}
-            >
-              Features
-            </NavLink>
-            <NavLink
               to="/industries"
               className="block font-semibold hover:cursor-pointer hover:underline"
               onClick={toggleMenu}
@@ -195,20 +190,76 @@ function Navbar() {
             >
               About
             </NavLink>
-            <NavLink
-              to="/book-a-demo"
-              onClick={toggleMenu}
-              className="block font-semibold hover:cursor-pointer hover:underline"
-            >
-              Book a demo
-            </NavLink>
-            <NavLink
-              to="/contact-us"
-              onClick={toggleMenu}
-              className="block font-semibold hover:cursor-pointer hover:underline"
-            >
-              Contact us
-            </NavLink>
+            <li className="aria-[current=page]:underline decoration-sky-300  font-semibold hover:cursor-pointer hover:underline active:underline ">
+              <ScrollIntoView selector="#pricing" onClick={toggleMenu}>
+                Pricing
+              </ScrollIntoView>
+            </li>
+            <li className="aria-[current=page]:underline decoration-sky-300  font-semibold hover:cursor-pointer hover:underline active:underline ">
+              <ScrollIntoView selector="#contact" onClick={toggleMenu}>
+                Contact us
+              </ScrollIntoView>
+            </li>
+            <li className=" items-center">
+              <Drawer>
+                <DrawerTrigger asChild className="align-center">
+                  <Button className="border-sky-300 bg-sky-300 text-white rounded-full  border-2 hover:border-sky-300 text-base font-semibold  ">
+                    Book a Demo
+                  </Button>
+                </DrawerTrigger>
+                <DrawerContent className="w-12/12 align-center">
+                  <DrawerHeader>
+                    <DrawerTitle>Book a Demo</DrawerTitle>
+                    <DrawerDescription>
+                      Schedule a demo with us and see how Teamgether can help
+                      your team collaborate more effectively.
+                    </DrawerDescription>
+                  </DrawerHeader>
+                  <form className="  rounded-xl text-center ">
+                    <div className="">
+                      <input
+                        className="w-6/12 border-2 rounded-xl p-2"
+                        placeholder="Your Name"
+                      ></input>
+                    </div>
+                    <div className="mt-4">
+                      <input
+                        type="email"
+                        className="w-6/12 border-2 rounded-xl p-2"
+                        placeholder="Your Email"
+                      ></input>
+                    </div>
+                    <div className="mt-4">
+                      <input
+                        className="w-6/12 border-2 rounded-xl p-2"
+                        placeholder="Your Company "
+                      ></input>
+                    </div>
+                    <div className="mt-4">
+                      <input
+                        className="w-6/12 border-2 rounded-xl p-2"
+                        placeholder="Your Position "
+                      ></input>
+                    </div>
+                    <div className="mt-4">
+                      <input
+                        className="w-6/12 border-2 rounded-xl p-2"
+                        placeholder="Your Phone Number "
+                      ></input>
+                    </div>
+                    <div className="mt-4">
+                      <textarea
+                        className="w-6/12 border-2 rounded-xl p-2 resize-none h-24"
+                        placeholder="Message"
+                      />
+                    </div>
+                    <Button className="px-12 mt-4 bg-sky-300 hover:bg-white hover:text-sky-300 ">
+                      Book a Demo
+                    </Button>
+                  </form>
+                </DrawerContent>
+              </Drawer>
+            </li>
           </ul>
         </div>
       )}

@@ -9,8 +9,8 @@ import { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import party from "../assets/Corporate Party.png";
-import party1 from "../assets/Corporate Intern.png";
+import party from "../assets/bstormImg.jpg";
+import party1 from "../assets/hshakeImg.jpg";
 
 import BrainstormImg from "../assets/brainstorming.png";
 import StoriesImg from "../assets/stories.png";
@@ -36,11 +36,14 @@ function Engagment() {
 
   return (
     <>
-      <Navbar />
-      <div className=" font-Inter bg-gradient-to-b from-blue-300/20">
+      {/* <Navbar /> */}
+      <div className=" font-Inter ">
         <h1 className="text-center text-4xl font-bold py-10 tracking-wider">
           Engagement
         </h1>
+        <h3 className="text-center text-xl">
+          Engage your employees and build a strong company culture
+        </h3>
 
         <div
           data-fc-type="accordion"
@@ -56,14 +59,15 @@ function Engagment() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
-            <div className="w-[500px] xl:ml-44">
+            {/* <div className="w-[500px] xl:ml-44">
               {accordion === 0 && <img src={party} />}
               {accordion === 1 && <img src={party} />}
               {accordion === 2 && <img src={party1} />}
               {accordion === 3 && <img src={party} />}
               {accordion === 4 && <img src={party1} />}
               {accordion === 5 && <img src={party} />}
-            </div>
+            </div> */}
+            <img src={party} className="w-[500px] xl:ml-44 rounded-xl" />
 
             <div className="xl:mr-36">
               <div>
@@ -410,11 +414,14 @@ function Engagment() {
               </div>
             </div>
 
-            <img src={party1} className="w-[500px] xl:mr-44 hidden md:block " />
+            <img
+              src={party1}
+              className="w-[500px] xl:mr-44 hidden md:block rounded-xl"
+            />
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

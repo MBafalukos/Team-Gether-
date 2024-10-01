@@ -7,7 +7,7 @@ import { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import party from "../assets/Corporate Party.png";
+import party from "../assets/reportingImg.jpg";
 
 import AnalyticsImg from "../assets/analyticsandreports.png";
 import XlImg from "../assets/xlextractofreports.png";
@@ -22,11 +22,14 @@ function Engagment() {
 
   return (
     <>
-      <Navbar />
-      <div className=" font-Inter bg-gradient-to-b from-blue-300/20">
+      {/* <Navbar /> */}
+      <div className=" font-Inter ">
         <h1 className="text-center text-4xl font-bold py-10 tracking-wider">
           Reporting
         </h1>
+        <h3 className="text-center text-xl">
+          Generates insights and reports, aiding in data-driven decision-making.
+        </h3>
 
         <div
           data-fc-type="accordion"
@@ -42,9 +45,11 @@ function Engagment() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
-            <img src={party} className="w-[500px] xl:ml-44" />
-
-            <div className="xl:mr-36">
+            <img
+              src={party}
+              className="w-[500px] xl:mr-44 rounded-xl md:hidden"
+            />
+            <div className="xl:ml-36">
               <div>
                 <FUCollapse
                   open={accordion == 0}
@@ -103,10 +108,14 @@ function Engagment() {
                 <div className="border-b  my-1 "></div>
               </div>
             </div>
+            <img
+              src={party}
+              className="w-[500px] xl:mr-44 rounded-xl hidden md:block"
+            />
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

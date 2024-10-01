@@ -71,9 +71,9 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section className="lg:pb-24 py-6 relative">
+      <section className="lg:pb-24 py-6 relative m-24">
         <div className="flex align-items-center justify-center">
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <div className="mb-6 relative bg-clip-border rounded-[0.1875rem]">
               <div className="py-12">
                 <h2 className="mb-4 text-2xl/6 mt-0 font-medium">
@@ -189,22 +189,22 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          {/* <div className="lg:w-5/12 ms-auto overflow-x-hidden">
-						<div className="h-[520px]">
-							<div
-								id="marker-map5"
-								className="h-100"
-								data-toggle="map"
-								data-map='{"mapCenter": [40.749179, -73.989276], "zoom": 12, "useTextIcon": false, "interactive": true, "geojson": "/assets/sample-listing-geojson.json" }'
-							>
-								<iframe
-									className="w-full h-[500px]"
-									src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569"
-									frameBorder={0}
-								/>
-							</div>
-						</div>
-					</div> */}
+          <div className="lg:w-5/12 ms-auto overflow-x-hidden rounded-xl hidden md:block ml-24">
+            <div className="h-[520px]">
+              <div
+                id="marker-map5"
+                className="h-100"
+                data-toggle="map"
+                data-map='{"mapCenter": [40.749179, -73.989276], "zoom": 12, "useTextIcon": false, "interactive": true, "geojson": "/assets/sample-listing-geojson.json" }'
+              >
+                <iframe
+                  className="w-full h-[500px]"
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569"
+                  frameBorder={0}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

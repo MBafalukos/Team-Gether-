@@ -4,6 +4,11 @@ import { why } from "./data";
 
 //image
 import portrait from "./assets/portrait.jpg";
+import Engagment from "./pages/Engagment";
+import Managers from "./pages/Managers";
+import Digital from "./pages/Digital";
+import Reporting from "./pages/Reporting";
+import Pricing from "./Pricing";
 
 const Hero = () => {
   return (
@@ -15,7 +20,13 @@ const Hero = () => {
             <div className="shape2" />
             <div className="shape3" />
           </div>
-          <div className=" flex pb-44">
+          <div data-aos="fade-up" data-aos-duration={500}>
+            <img
+              src={portrait}
+              className="md:hidden  lg:ms-auto lg:me-0 mx-auto z-10 rounded-3xl relative  "
+            />
+          </div>
+          <div className=" flex pb-14">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center ">
               <div
                 className="pb- mb-10"
@@ -51,10 +62,14 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div data-aos="fade-up" data-aos-duration={500}>
+              <div
+                data-aos="fade-up"
+                data-aos-duration={500}
+                className="hidden md:block"
+              >
                 <img
                   src={portrait}
-                  className="lg:ms-auto lg:me-0 mx-auto z-10 rounded-3xl relative  "
+                  className=" lg:ms-auto lg:me-0 mx-auto z-10 rounded-3xl relative  "
                 />
               </div>
             </div>
@@ -62,8 +77,15 @@ const Hero = () => {
         </div>
       </section>
 
-      <Features />
+      <Engagment />
+      <Managers />
+      <Reporting />
+      <Digital />
 
+      {/* <Features /> */}
+      <div id="pricing">
+        <Pricing />
+      </div>
       <Whyus why={why} />
     </>
   );

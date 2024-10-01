@@ -9,7 +9,9 @@ function Homepage() {
     <div>
       <Navbar />
       <MainContent />
-      <ContactUs />
+      <div id="Team-Gether-/#/contact">
+        <ContactUs />
+      </div>
       <Footer />
     </div>
   );

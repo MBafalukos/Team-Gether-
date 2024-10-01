@@ -9,7 +9,7 @@ import { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import party from "../assets/Corporate Party.png";
+import party from "../assets/digitalImg.jpg";
 
 import KnowledgeImg from "../assets/knowledgebase.png";
 import StorageImg from "../assets/documentstorage.png";
@@ -25,12 +25,14 @@ function Engagment() {
 
   return (
     <>
-      <Navbar />
-      <div className=" font-Inter bg-gradient-to-b from-blue-300/20">
+      {/* <Navbar /> */}
+      <div className=" font-Inter bg-blue-400/20">
         <h1 className="text-center text-4xl font-bold py-10 tracking-wider">
           Digital Space
         </h1>
-
+        <h3 className="text-center text-xl">
+          Securely manages documents, enhancing collaboration and compliance.
+        </h3>
         <div
           data-fc-type="accordion"
           data-aos="fade-up"
@@ -45,7 +47,7 @@ function Engagment() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
-            <img src={party} className="w-[500px] xl:ml-44" />
+            <img src={party} className="w-[500px] xl:ml-44 rounded-xl" />
 
             <div className="xl:mr-36">
               <div>
@@ -136,7 +138,7 @@ function Engagment() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
