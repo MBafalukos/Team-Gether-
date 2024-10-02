@@ -16,13 +16,13 @@ const Services = ({ why }: WhyProps) => {
         </h1>
       </div>
       <div className="rounded-full ">
-        <div className="grid xl:grid-cols-2 grid-cols-1 my-12 gap-4">
-          <div>
+        <div className="flex flex-col sm:flex-row">
+          <div className="flex-1">
             {(why || []).map((why, idx) => {
               return (
                 <div
                   key={idx}
-                  className="p-6 bg-transparent rounded-md hover:shadow-xl transition-all duration-500 hover:scale-105   border-black"
+                  className="p-2 bg-transparent rounded-md hover:shadow-xl transition-all duration-500 hover:scale-105   border-black"
                   data-aos="fade-up"
                   data-aos-duration={500}
                 >
@@ -30,7 +30,7 @@ const Services = ({ why }: WhyProps) => {
                     <div
                       className={`w-24 h-24 rounded-md  flex items-center justify-center`}
                     >
-                      {why.icon}
+                      <div className="w-12 h-12">{why.icon}</div>
                     </div>
 
                     <p className="">{why.description}</p>
@@ -39,7 +39,10 @@ const Services = ({ why }: WhyProps) => {
               );
             })}
           </div>
-          <img src={WhyUsImg} className="rounded-xl hidden xl:block h-full" />
+          <img
+            src={WhyUsImg}
+            className="rounded-xl hidden xl:block h-full flex-1 w-6/12"
+          />
         </div>
       </div>
     </section>
