@@ -76,8 +76,12 @@ const Hero = () => {
         </div>
       </section>
 
-      {SectionData.map((section) => (
-        <AccordionComp data={section} />
+      {SectionData.map((section, index) => (
+        <AccordionComp
+          data={section}
+          isReversed={index % 2 === 1}
+          isBlue={index % 2 === 1}
+        />
       ))}
 
       {/* <Engagment />

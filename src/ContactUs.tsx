@@ -3,6 +3,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormInput } from "./Form/";
 import { useForm } from "react-hook-form";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const ContactUs = () => {
   // form validation schema
@@ -17,6 +19,21 @@ const ContactUs = () => {
       message: yup.string().required("Please enter Message"),
     })
   );
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToId = () => {
+      const hash = location.hash; // get the hash from URL (e.g., #mySection)
+      if (hash) {
+        const element = document.getElementById(hash.substring(1)); // remove the "#" and get the element by ID
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" }); // scroll to the element
+        }
+      }
+    };
+    scrollToId();
+  }, [location]);
 
   // form method
   const methods = useForm({ resolver: schemaResolver });

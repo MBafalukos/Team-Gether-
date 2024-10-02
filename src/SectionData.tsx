@@ -20,7 +20,7 @@ import XlImg from "./assets/xlextractofreports.png";
 
 // engagements images
 import EngImg1 from "./assets/bstormImg.jpg";
-// import EngImg2 from "../assets/hshakeImg.jpg";
+import EngImg2 from "./assets/hshakeImg.jpg";
 
 import BrainstormImg from "./assets/brainstorming.png";
 import StoriesImg from "./assets/stories.png";
@@ -40,6 +40,7 @@ const SectionData = [
     title: "Engagement",
     subtitle: "Engage your employees and build a strong company culture",
     image: EngImg1,
+    image2: EngImg2,
     accordion: [
       {
         id: 0,

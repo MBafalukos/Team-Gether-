@@ -9,7 +9,7 @@ import English from "./assets/englishflag.png";
   DropdownMenuTrigger}
  from "./components/ui/dropdown-menu"; */
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 // import { useRef } from "react";
 import { useState } from "react";
@@ -71,11 +71,11 @@ function Navbar() {
             to="/pricing"
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           > */}
-          <ScrollIntoView selector="#pricing">
+          <Link to="/home#pricing">
             <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
               Pricing
             </li>
-          </ScrollIntoView>
+          </Link>
           {/* </NavLink> */}
 
           {/* <a
@@ -83,11 +83,11 @@ function Navbar() {
             className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "
           > */}
           {/* <NavLink className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline "> */}
-          <ScrollIntoView selector="#contact">
+          <Link to="/home#contact">
             <li className="aria-[current=page]:underline decoration-sky-300 hidden lg:block font-semibold hover:cursor-pointer hover:underline active:underline ">
               Contact us
             </li>
-          </ScrollIntoView>
+          </Link>
           {/* </a> */}
           {/* </NavLink> */}
           <li className="hidden lg:block items-center">
