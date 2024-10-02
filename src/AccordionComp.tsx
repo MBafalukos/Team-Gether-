@@ -15,7 +15,7 @@ function AccordionComp({ data, isReversed, isBlue }: any) {
       <div>
         <div
           className={cn(
-            "text-left font-normal",
+            "text-left font-Inter",
             isBlue && "bg-blue-400/20",
             !isBlue && "bg-white"
           )}

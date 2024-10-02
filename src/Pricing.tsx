@@ -21,7 +21,7 @@ const Pricing = () => {
   }, [location]);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center font-Inter">
       <section className="py-20 px-12 ">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
