@@ -64,7 +64,7 @@ function AccordionComp({ data, isReversed, isBlue }: any) {
                         className=" inline-flex items-center gap-x-4 w-full p-2  text-black transition-all hover:text-gray-500  dark:hover:text-gray-400"
                         data-fc-type="collapse"
                       >
-                        <div className="border rounded-lg flex items-center justify-center h-12 w-12">
+                        <div className=" rounded-lg flex items-center justify-center h-12 w-12">
                           <img src={subdata.icon} />
                         </div>
 

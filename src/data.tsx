@@ -56,25 +56,25 @@ const why: Why[] = [
     icon: <img src={TailorMade} />,
 
     description:
-      " Generates insights and reports, aiding in data-driven decision-making.",
+      "Generates insights and reports, aiding in data-driven decision-making.",
   },
   {
     icon: <img src={Experience} />,
 
     description:
-      " Securely manages documents, enhancing collaboration and ensuring compliance.",
+      "Extends beyond internal engagement by addressing customer experience and solving problems.",
   },
   {
     icon: <img src={CustomBuild} />,
 
     description:
-      " Securely manages documents, enhancing collaboration and ensuring compliance.",
+      "Offers customization tailored to unique team structures, workflows, and engagement goals.",
   },
   {
     icon: <img src={Discussion} />,
 
     description:
-      " Securely manages documents, enhancing collaboration and ensuring compliance.",
+      "Encourages adoption and involvement, leading to higher engagement within teams.",
   },
 ];
 
