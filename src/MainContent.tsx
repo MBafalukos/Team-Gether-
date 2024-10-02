@@ -1,4 +1,4 @@
-import Features from "./Features";
+// import Features from "./Features";
 import Whyus from "./Whyus";
 import { why } from "./data";
 
@@ -9,6 +9,8 @@ import Managers from "./pages/Managers";
 import Digital from "./pages/Digital";
 import Reporting from "./pages/Reporting";
 import Pricing from "./Pricing";
+import AccordionComp from "./AccordionComp";
+import SectionData from "./SectionData";
 
 const Hero = () => {
   return (
@@ -77,10 +79,14 @@ const Hero = () => {
         </div>
       </section>
 
-      <Engagment />
+      {SectionData.map((section) => (
+        <AccordionComp data={section} />
+      ))}
+
+      {/* <Engagment />
       <Managers />
       <Reporting />
-      <Digital />
+      <Digital /> */}
 
       {/* <Features /> */}
       <div id="pricing">

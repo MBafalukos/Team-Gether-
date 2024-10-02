@@ -6,8 +6,8 @@ import { useState } from "react";
 // import { HiOutlineSpeakerphone } from "react-icons/hi";
 // import { IoChatboxEllipsesOutline } from "react-icons/io5";
 // import { LuScanFace } from "react-icons/lu";
-import Navbar from "../Navbar";
-import Footer from "@/Footer";
+// import Navbar from "../Navbar";
+// import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/bstormImg.jpg";
 import party1 from "../assets/hshakeImg.jpg";
@@ -58,7 +58,7 @@ function Engagment() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
+          <div className="grid grid-cols-1 md:grid-cols-2  ">
             {/* <div className="w-[500px] xl:ml-44">
               {accordion === 0 && <img src={party} />}
               {accordion === 1 && <img src={party} />}

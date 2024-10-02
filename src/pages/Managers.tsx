@@ -6,8 +6,8 @@ import { useState } from "react";
 // import { HiOutlineSpeakerphone } from "react-icons/hi";
 // import { IoChatboxEllipsesOutline } from "react-icons/io5";
 // import { LuScanFace } from "react-icons/lu";
-import Navbar from "../Navbar";
-import Footer from "@/Footer";
+// import Navbar from "../Navbar";
+// import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/managersImg.jpg";
 

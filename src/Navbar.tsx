@@ -1,5 +1,5 @@
 import ScrollIntoView from "react-scroll-into-view";
-import TeamgetherLogo from "./assets/TeamGether3.png";
+import TeamgetherLogo from "./assets/TeamgetherLogo.png";
 /* import Greek from "./assets/greece.svg";
 import English from "./assets/englishflag.png";
  import {
@@ -40,7 +40,7 @@ function Navbar() {
         <div className="ml-4 sm:ml-12">
           <a href="/Team-Gether-/">
             <img
-              className="w-44   sm:h-20 sm:w-auto hover:cursor-pointer"
+              className="w-44  sm:h-24 sm:w-96 hover:cursor-pointer"
               src={TeamgetherLogo}
             ></img>
           </a>
@@ -150,7 +150,7 @@ function Navbar() {
               </DrawerContent>
             </Drawer>
           </li>
-          <li className="mt-2 lg:hidden mx-4 block">
+          <li className="mt-2 lg:hidden mx-4 block px-14">
             <button onClick={toggleMenu}>
               {isMenuOpen ? <X /> : <Menu />}
             </button>

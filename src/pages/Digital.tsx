@@ -6,8 +6,8 @@ import { useState } from "react";
 // import { HiOutlineSpeakerphone } from "react-icons/hi";
 // import { IoChatboxEllipsesOutline } from "react-icons/io5";
 // import { LuScanFace } from "react-icons/lu";
-import Navbar from "../Navbar";
-import Footer from "@/Footer";
+// import Navbar from "../Navbar";
+// import Footer from "@/Footer";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import party from "../assets/digitalImg.jpg";
 
@@ -46,10 +46,12 @@ function Engagment() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ">
-            <img src={party} className="w-[500px] xl:ml-44 rounded-xl" />
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1">
+              <img src={party} className="w-full  rounded-xl" />
+            </div>
 
-            <div className="xl:mr-36">
+            <div className=" flex-1">
               <div>
                 <FUCollapse
                   open={accordion == 0}

@@ -30,7 +30,7 @@ const ContactUs = () => {
     <>
       <section
         id="contact"
-        className="bg-sky-100/20 lg:pt-28 sm:pb-36 pb-16 pt-36 relative"
+        className="bg-sky-100/20 pt-36 lg:pt-16 pb-16 sm:pb-24 relative"
       >
         <div className="flex justify-center">
           <div className="lg:w-7/12 text-center">
