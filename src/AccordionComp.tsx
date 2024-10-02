@@ -20,7 +20,7 @@ function AccordionComp({ data, isReversed, isBlue }: any) {
             !isBlue && "bg-white"
           )}
         >
-          <h1 className="text-center text-2xl font-bold py-10 tracking-wider">
+          <h1 className="text-center text-3xl font-semibold py-10 tracking-wider">
             {data.title}
           </h1>
           <h3 className="text-center text-xl">{data.subtitle}</h3>
