@@ -44,19 +44,20 @@ const services: Service[] = [
 const why: Why[] = [
   {
     icon: <img src={Focus} />,
-    description: "Engage your employees and build a strong company culture",
+    description:
+      "Stands out by specifically focusing on team communication, collaboration, and engagement.",
   },
   {
     icon: <img src={Features} />,
 
     description:
-      "Manage communication, performance and culture in one platform",
+      "Offers features that foster participation, feedback, and community-building in a simple environment.",
   },
   {
     icon: <img src={TailorMade} />,
 
     description:
-      "Generates insights and reports, aiding in data-driven decision-making.",
+      "Emphasizes gathering feedback and generating impactful ideas through structured processes.",
   },
   {
     icon: <img src={Experience} />,
