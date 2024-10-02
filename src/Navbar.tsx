@@ -191,14 +191,14 @@ function Navbar() {
               About
             </NavLink>
             <li className="aria-[current=page]:underline decoration-sky-300  font-semibold hover:cursor-pointer hover:underline active:underline ">
-              <ScrollIntoView selector="#pricing" onClick={toggleMenu}>
+              <Link to="/home#pricing" onClick={toggleMenu}>
                 Pricing
-              </ScrollIntoView>
+              </Link>
             </li>
             <li className="aria-[current=page]:underline decoration-sky-300  font-semibold hover:cursor-pointer hover:underline active:underline ">
-              <ScrollIntoView selector="#contact" onClick={toggleMenu}>
+              <Link to="/home#contact" onClick={toggleMenu}>
                 Contact us
-              </ScrollIntoView>
+              </Link>
             </li>
             <li className=" items-center">
               <Drawer>
