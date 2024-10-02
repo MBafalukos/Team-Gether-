@@ -1,4 +1,4 @@
-import ScrollIntoView from "react-scroll-into-view";
+// import ScrollIntoView from "react-scroll-into-view";
 import TeamgetherLogo from "./assets/TeamgetherLogo.png";
 /* import Greek from "./assets/greece.svg";
 import English from "./assets/englishflag.png";
