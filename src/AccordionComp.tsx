@@ -2,7 +2,7 @@ import { FUCollapse } from "./FrostUI";
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-function AccordionComp({ data }) {
+function AccordionComp({ data }: any) {
   const [accordion, setAccordion] = useState<number | null>(0);
 
   const handleAccordion = (index: number) => () => {
@@ -36,7 +36,7 @@ function AccordionComp({ data }) {
 
             <div className=" flex-1">
               {" "}
-              {data.accordion.map((subdata) => (
+              {data.accordion.map((subdata: any) => (
                 <div>
                   <FUCollapse
                     open={accordion == subdata.id}

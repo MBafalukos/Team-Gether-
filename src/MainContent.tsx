@@ -4,10 +4,7 @@ import { why } from "./data";
 
 //image
 import portrait from "./assets/portrait.jpg";
-import Engagment from "./pages/Engagment";
-import Managers from "./pages/Managers";
-import Digital from "./pages/Digital";
-import Reporting from "./pages/Reporting";
+
 import Pricing from "./Pricing";
 import AccordionComp from "./AccordionComp";
 import SectionData from "./SectionData";
